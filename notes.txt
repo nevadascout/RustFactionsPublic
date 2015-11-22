@@ -1,0 +1,22 @@
+
+
+ping.cs -> https://gist.github.com/Mailaender/5130047
+
+
+prefab name				coords							radius			desc
+
+radtown_small_5 		(-1198.8, 31.3, 988.1)			70				bus parking
+radtown_small_3 		(896.6, 26.1, 875.6)			40				mansion
+radtown_small_1 		(1088.7, 19.3, -1330.4)			70				factory
+radtown_small_4 		(-1116.3, 35.0, -229.9)			70				hangar in center
+radtown_small_2 		(15.4, 19.7, 163.7)				70				containers (covered)
+sphere_tank 			(-280.7, 25.9, 1307.9)			95				oil sphere
+airfield_1 				(746.7, 22.4, -970.3)			180				airfield
+
+satellite_dish ?		(714.7, 29.5, -555.0)			35				satellite
+
+
+
+assets/prefabs/building/wall.external.high.stone/wall.external.high.stone.prefab
+
+http://oxidemod.org/threads/damage-types.11155/
