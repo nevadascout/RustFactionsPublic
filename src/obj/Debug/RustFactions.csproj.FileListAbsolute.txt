@@ -1,0 +1,12 @@
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\RustFactions.Plugins.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\RustFactions.Plugins.pdb
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Assembly-CSharp.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Oxide.Core.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Oxide.Ext.CSharp.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Oxide.Ext.Unity.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\Oxide.Game.Rust.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\bin\Debug\UnityEngine.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\obj\Debug\RustFactions.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\obj\Debug\RustFactions.Plugins.dll
+C:\Users\Joe\Desktop\Rust Factions\code\RustFactionsPublic\src\obj\Debug\RustFactions.Plugins.pdb
