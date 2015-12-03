@@ -6,7 +6,13 @@
         [ChatCommand("rednut")]
         private void SayMessage(BasePlayer player, string cmd, string[] args)
         {
-            this.SendReply(player, "REDNUT STATUS: Still in the badlands");
+            this.PrintToChat($"{player.displayName} is looking for rednut...");
+        }
+
+        [ChatCommand("hello")]
+        private void SayHello(BasePlayer player, string cmd, string[] args)
+        {
+            this.PrintToChat($"{player.displayName} says 'Hello?'");
         }
     }
 }

@@ -64,6 +64,7 @@
     <Compile Include="Plugins\Activity.cs" />
     <Compile Include="Plugins\Flashbang.cs" />
     <Compile Include="Plugins\GatherLevels.cs" />
+    <Compile Include="Plugins\GatherLevels2.cs" />
     <Compile Include="Plugins\Radtowns.cs" />
     <Compile Include="Plugins\Rednut.cs" />
     <Compile Include="Plugins\SaveMessage.cs" />
