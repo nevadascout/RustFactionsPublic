@@ -20,9 +20,7 @@
 
             if (this.IsInBadlands(player))
             {
-                var random = new Random();
-                var multiplier = random.Next(2, 3);
-                item.amount = Convert.ToInt32(item.amount * multiplier);
+                item.amount = Convert.ToInt32(item.amount * 3);
             }
         }
 
@@ -36,9 +34,7 @@
 
             if (this.IsInBadlands(player))
             {
-                var random = new Random();
-                var multiplier = random.Next(2, 3);
-                item.amount = Convert.ToInt32(item.amount * multiplier);
+                item.amount = Convert.ToInt32(item.amount * 3);
             }
         }
 
