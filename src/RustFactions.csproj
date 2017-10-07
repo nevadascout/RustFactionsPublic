@@ -30,23 +30,51 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
+    <Reference Include="Facepunch.Console">
+      <HintPath>..\lib\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network">
+      <HintPath>..\lib\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon">
+      <HintPath>..\lib\Facepunch.Rcon.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine">
+      <HintPath>..\lib\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Oxide.Core">
+    <Reference Include="Oxide.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Oxide.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Oxide.Ext.CSharp">
-      <HintPath>..\lib\Oxide.Ext.CSharp.dll</HintPath>
+    <Reference Include="Oxide.Core.CSharp">
+      <HintPath>..\lib\Oxide.Core.CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Oxide.Ext.Unity">
-      <HintPath>..\lib\Oxide.Ext.Unity.dll</HintPath>
+    <Reference Include="Oxide.Core.Unity">
+      <HintPath>..\lib\Oxide.Core.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="Oxide.Game.Rust">
+    <Reference Include="Oxide.Game.Rust, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Oxide.Game.Rust.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\lib\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data">
+      <HintPath>..\lib\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global">
+      <HintPath>..\lib\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.UI">
+      <HintPath>..\lib\Rust.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -56,15 +84,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Plugins\Activity.cs" />
     <Compile Include="Plugins\Flashbang.cs" />
+    <Compile Include="Plugins\GatherRates.cs" />
     <Compile Include="Plugins\GatherLevels.cs" />
     <Compile Include="Plugins\GatherLevels2.cs" />
+    <Compile Include="Plugins\Ooc.cs" />
     <Compile Include="Plugins\Radtowns.cs" />
     <Compile Include="Plugins\Rednut.cs" />
     <Compile Include="Plugins\SaveMessage.cs" />

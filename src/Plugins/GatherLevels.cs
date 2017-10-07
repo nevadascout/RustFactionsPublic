@@ -1,11 +1,10 @@
-﻿namespace RustFactions.Plugins.Plugins
+﻿namespace Oxide.Plugins
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
     using Oxide.Core;
-    using Oxide.Plugins;
 
     [Info("GatherLevels", "Rust Factions", "1.0")]
     public class GatherLevels : RustPlugin
@@ -15,8 +14,8 @@
         private readonly System.Random rand = new System.Random();
 
         // Define z coords for the badlands
-        private readonly float zoneTop = 184;
-        private readonly float zoneBottom = -402;
+        private readonly float zoneTop = 291.3f;
+        private readonly float zoneBottom = -188.5f;
         private readonly string hqmName = "High Quality Metal Ore";
         private readonly string oilName = "Crude Oil";
 
@@ -39,71 +38,71 @@
         }
 
 
-        #region Badlands Quarry Rates
+        //#region Badlands Quarry Rates
 
-        private void OnSurveyGather(SurveyCharge survey, Item item)
-        {
-            if (this.IsInBadlands(survey))
-            {
-                var multiplier = this.rand.Next(3, 5);
-                item.amount = item.amount * multiplier;
-            }
+        //private void OnSurveyGather(SurveyCharge survey, Item item)
+        //{
+        //    if (this.IsInBadlands(survey))
+        //    {
+        //        var multiplier = this.rand.Next(3, 5);
+        //        item.amount = item.amount * multiplier;
+        //    }
 
-            // // Remove HQM in the badlands + south of it
-            // if (survey.transform.position.z < this.zoneTop)
-            // {
-            //     if (item.info.displayName.english == this.hqmName)
-            //     {
-            //         item.Remove(0f);
-            //     }
-            // }
+        //    // // Remove HQM in the badlands + south of it
+        //    // if (survey.transform.position.z < this.zoneTop)
+        //    // {
+        //    //     if (item.info.displayName.english == this.hqmName)
+        //    //     {
+        //    //         item.Remove(0f);
+        //    //     }
+        //    // }
 
-            // // Remove Oil in the badlands + noth of it
-            // if (survey.transform.position.z > this.zoneBottom)
-            // {
-            //     if (item.info.displayName.english == this.oilName)
-            //     {
-            //         item.Remove(0f);
-            //     }
-            // }
-        }
+        //    // // Remove Oil in the badlands + noth of it
+        //    // if (survey.transform.position.z > this.zoneBottom)
+        //    // {
+        //    //     if (item.info.displayName.english == this.oilName)
+        //    //     {
+        //    //         item.Remove(0f);
+        //    //     }
+        //    // }
+        //}
 
-        private void OnQuarryGather(MiningQuarry quarry, Item item)
-        {
-            if (this.IsInBadlands(quarry))
-            {
-                var multiplier = this.rand.Next(this.quarryMinRate, this.quarryMaxRate);
-                item.amount = item.amount * multiplier;
-            }
+        //private void OnQuarryGather(MiningQuarry quarry, Item item)
+        //{
+        //    if (this.IsInBadlands(quarry))
+        //    {
+        //        var multiplier = this.rand.Next(this.quarryMinRate, this.quarryMaxRate);
+        //        item.amount = item.amount * multiplier;
+        //    }
 
-            // // Remove HQM in the badlands + south of it
-            // if (quarry.transform.position.z < this.zoneTop)
-            // {
-            //     if (item.info.displayName.english == this.hqmName)
-            //     {
-            //         item.RemoveFromContainer();
-            //         //item.Remove(0f);
-            //     }
-            // }
+        //    // // Remove HQM in the badlands + south of it
+        //    // if (quarry.transform.position.z < this.zoneTop)
+        //    // {
+        //    //     if (item.info.displayName.english == this.hqmName)
+        //    //     {
+        //    //         item.RemoveFromContainer();
+        //    //         //item.Remove(0f);
+        //    //     }
+        //    // }
 
-            // // Remove Oil in the badlands + noth of it
-            // if (quarry.transform.position.z > this.zoneBottom)
-            // {
-            //     if (item.info.displayName.english == this.oilName)
-            //     {
-            //         item.RemoveFromContainer();
-            //         //item.Remove(0f);
-            //     }
-            // }
-        }
+        //    // // Remove Oil in the badlands + noth of it
+        //    // if (quarry.transform.position.z > this.zoneBottom)
+        //    // {
+        //    //     if (item.info.displayName.english == this.oilName)
+        //    //     {
+        //    //         item.RemoveFromContainer();
+        //    //         //item.Remove(0f);
+        //    //     }
+        //    // }
+        //}
 
-        private bool IsInBadlands(UnityEngine.Component component)
-        {
-            return component.transform.position.z > this.zoneBottom &&
-                   component.transform.position.z < this.zoneTop;
-        }
+        //private bool IsInBadlands(UnityEngine.Component component)
+        //{
+        //    return component.transform.position.z > this.zoneBottom &&
+        //           component.transform.position.z < this.zoneTop;
+        //}
 
-        #endregion
+        //#endregion
         
 
         #region Player Levelling

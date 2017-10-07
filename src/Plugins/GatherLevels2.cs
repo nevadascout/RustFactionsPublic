@@ -1,9 +1,7 @@
 ﻿namespace Oxide.Plugins
 {
     using System;
-
-    using Oxide.Plugins;
-
+    
     [Info("Gather Levels 2", "nevada_scout", "1.0")]
     public class GatherLevels2 : RustPlugin
     {
@@ -30,7 +28,6 @@
         private void OnPlantGather(PlantEntity plant, Item item, BasePlayer player)
         {
             if (player == null) return;
-
 
             if (this.IsInBadlands(player))
             {

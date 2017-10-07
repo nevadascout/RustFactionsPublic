@@ -76,7 +76,7 @@
             block.transform.rotation = angles;
             block.gameObject.SetActive(true);
             block.blockDefinition = PrefabAttribute.server.Find<Construction>(block.prefabID);
-            block.Spawn(true);
+            block.Spawn();
             block.health = block.MaxHealth();
 
             block.SendNetworkUpdate();
